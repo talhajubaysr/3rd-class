@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    width: 100vw;
+}
+.header{
+    width: 100vw;
+    height: 60px;
+    background-color: gold;
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+   
+}
+.logo-1{
+    width: 35px;
+    height: 35px;
+    margin-left: 205px;
+    margin-top:10px ;
+
+}
+.header-items{
+ display: flex;
+ margin-right: 300px;
+}
+.header-item{
+    list-style: none;
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a:hover{
+    color: rgb(253, 251, 251);
+    text-shadow: 1px 1px 1px #000,-1px -1px 1px #000;
+}
+/*header*/
+/*--first div*/
+.first-image{
+   width: 100vw;
+   height: 100vh;
+   display: grid;
+   background-size: cover;
+   position: relative;
+    background-image: url(./image/pexels-negative-space-160107.jpg) ;
+}
+.first-image h1{
+    font-size: 50px;
+    position: absolute;
+    margin: 250px 0 0 130px;
+    color:gold;
+    text-shadow: 1px 1px 1px #000,-1px -1px 1px #000;
+    
+}
+.first-image h1 span{
+    color: white;
+}
+.first-image h2{
+    font-size: 40px;
+    position: absolute;
+    margin: 350px 0 0 130px;
+    color: rgb(250, 248, 248);
+    text-shadow: 1px 1px 1px #000,-1px -1px 1px #000;
+}
+.first-image h3{
+    font-size: 40px;
+    position: absolute;
+    margin: 450px 0 0 130px;
+    color:gold;
+    text-shadow: 1px 1px 1px #000,-1px -1px 1px #000;
+}
+.first-image h3 span{
+    color: white;
+}
+/*--first div*/
+/*--second div*/
+.about-me{
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    margin: 20px;
+    grid-template-columns: repeat();
+}
+.profile{
+    width: 50vw;
+    height: 50vh;
+}
+.profile-description{
+    width: 50vw;
+    height: 50vh;
+}
+.about-info{
+    margin: 20px 10px 0px 100px;
+    width: 40vw;
+}
+.about-heading{
+    position: absolute;
+    font-size: 30px;
+    margin: 10px 10px;
+    color: #000;
+    text-shadow: none;
+}
+.about-heading-2{
+    position: absolute;
+    font-size: 20px;
+    margin: 50px 10px;
+    color: #000;
+    text-shadow: none;
+}
+.about-paragraph{
+    position: absolute;
+    font-size: 15px;
+    margin: 150px 10px;
+    color: #000;
+    text-shadow: none;
+    width: 500px;
+    line-height: 40px;
+}
+.icon{
+    position: absolute;
+    font-size: 35px;
+    margin: 500px 200px ;
+    color: rgb(27, 40, 233);
+    text-shadow: none;
+}
+
+/*--second div*/
+.skil{
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+    display:flex;
+    justify-content: space-between;
+}
+.skil-heading h1 span{
+    
+  text-align: center;
+  margin: 0 500px 0 0;
+  
+   
+   
+   
+}
+.my-skill{
+    width: calc(400px-200px);
+    text-align: center;
+    padding: 100px;
+    
+}
+.progress-bar{
+height: 30px;
+width: 400px;
+background:#eee ;
+border-radius: 25px;
+overflow: hidden;
+position: relative;
+margin: 10px 0 0 0;
+}
+.progress-bar::before{
+position: absolute;
+top: 0;
+left: 0;
+content: "";
+height: 100%;
+background: rgb(255, 217, 0);
+z-index: 1 !important;
+}
+.progress-bar h1{
+top: 7px;
+left: 10px;
+position: absolute;
+font-size: 15px;
+color: honeydew;
+z-index: 2;
+}
+.progress-bar h1 span{
+position: absolute;
+top: 0;
+left: 230px;
+}
+.progress-1::before{
+width:70% ;
+}
+.progress-2::before{
+width:95% ;
+}
+.progress-3::before{
+width:90% ;
+}
+.progress-4::before{
+    width:80% ;
+    }
+    .progress-5::before{
+        width:70% ;
+        }
+        .progress-6::before{
+            width:95% ;
+            }
+.progress-2 h1 span{
+left: 330px;
+}
+.progress-3 h1 span{
+left: 310px;
+}
+.progress-4 h1 span{
+    left: 275px;
+    }
+    .progress-5 h1 span{
+        left: 230px;
+        }
+        .progress-6 h1 span{
+            left: 330px;
+            }
+
+/*--second div*/
+.card{  
+    width: calc(100vw-200px);
+          background:white;
+          display: grid;
+          grid-gap: 150px;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          overflow-x: hidden;
+          padding: 200px 200px;
+          z-index: 1000;
+          margin: 0px;
+       }
+      
+          
+.card-items{
+    min-width: 300px;
+    min-height: 350px;
+    background: rgb(219, 214, 214);
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+   text-align: left;
+   position: relative;
+}
+.resume-heading-1{
+    margin:0 ;
+    font-size: 20px;
+    color: rgb(26, 25, 25);
+    text-shadow: none;
+    display: block;
+}
+.resume-heading-2{
+    width: calc(100%-40px);
+    font-size: 30px;
+    margin: 25px 0 0 0;
+    color: #000;
+    text-shadow: none;
+
+  
+}
+.resume-heading-3{
+    font-size: 20px;
+    margin: 25px 0 0 0;
+    color: #000;
+    text-shadow: none;
+    
+} 
+.resume-paragraph{
+ margin-top: 25px;
+    font-size: 20px; 
+    color: #000;
+    text-shadow: none; 
+} 
+/*--4th div*/
+.card-2{    
+    width: 100vw;
+          background:white;
+          display: grid;
+          grid-gap: 50px;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          overflow-x: hidden;
+          padding: 200px 200px;
+         
+          z-index: 1000;
+          margin: 0px;
+}
+          
+.card-items-2{
+    min-width: 300px;
+    min-height: 350px;
+    background: white;
+    padding: 50px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    transform-style: preserve-3d; 
+    transform: translateZ(50px) perspective(2000);
+    border-radius: 5px;
+    text-align: center;
+   
+}
+
+.services-heading-1{  
+    font-size: 20px;
+    margin: 0 10px;
+    color: rgb(26, 25, 25);
+    text-shadow: none;
+    
+}
+.card-items-2 a{
+  font-size: 50px;
+  margin: 0;
+  color:gold;  
+}
+.card-items-2 a:hover{
+   color: rgba(245, 124, 11, 0.678);
+   text-shadow: none;
+}
+/*-5TH DIV-*/
+.card-3{    
+    width: 100vw;
+          background:white;
+          display: grid;
+          grid-gap: 50px;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          overflow-x: hidden;
+          padding: 200px 200px;
+          
+          z-index: 1000;
+          margin: 0px;
+}
+.card-items-3{
+    min-width: 300px;
+    
+    background: white;
+    padding: 50px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    transform-style: preserve-3d; 
+    transform: translateZ(50px) perspective(2000);
+    border-radius: 5px;
+    text-align: center;
+   
+}
+.resume{
+    text-align: center;
+}
+.resume h5{
+   font-size: 40px;
+}
+.card-items-3 img{
+  width: 300px;  
+}
+
+.nav{
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+}
+h5{
+    top: 0;
+    left: 50%;
+    font-size: 30px;
+}
+.portfolio{
+    display: flex;
+   font-size: 25px;
+   padding: 0 480px;
+   
+
+    
+   }
+   .p-items{
+       list-style: none;
+       margin: 20px;
+   }
+   .p-item{
+       text-decoration: none;
+       color: #000;
+       font-size: 15px;
+       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   }
+   /*-last div-*/
+   .heading-no6{
+       text-align: center;
+   }
+   h6{
+       font-size: 50px;}
+  .footer{
+width: 100vw;
+height: 80px;
+background-color: gray;
+justify-content: space-between;
+text-align: center;
+  }
+  .foot{
+      padding: 10px 200px;
+  }
